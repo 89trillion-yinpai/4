@@ -18,10 +18,13 @@ public class JsonController : MonoBehaviour
     //读取json数据
     public void duqu()
     {
+        item.Clear();
+        
         TextAsset playText = Resources.Load("ranklist") as TextAsset;
         JSONNode jsonObject = JSON.Parse(playText.text);
         countDown = jsonObject["countDown"];
-        for (int i = 0; i < jsonObject[1].Count; i++)
+        num = jsonObject[1].Count;
+        for (int i = 0; i < num; i++)
         {
             Read fieldRead = new Read();
             fieldRead.uid = jsonObject[1][i]["uid"];
@@ -32,9 +35,7 @@ public class JsonController : MonoBehaviour
             fieldRead.onlineStatus = jsonObject[1][i]["onlineStatus"];
             fieldRead.role = jsonObject[1][i]["role"];
             fieldRead.abb = jsonObject[1][i]["abb"];
-            Debug.Log("r");
             item.Add(fieldRead);
-            num = jsonObject[1].Count;
         }
         item.Sort((x, y) => { return -x.trophy.CompareTo(y.trophy); });
     }

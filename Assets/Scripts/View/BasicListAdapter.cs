@@ -47,17 +47,18 @@ namespace Assets.Scripts
 		// Helper that stores data and notifies the adapter when items count changes
 		// Can be iterated and can also have its elements accessed by the [] operator
 		public SimpleDataHelper<MyListItemModel> Data { get; private set; }
+		//读取json数据列表
 		public JsonController list;
-		//前三名背景    "FormerlySerializedAs"防止变量名改变丢失引用
+		//前三名的背景    "FormerlySerializedAs"防止变量名改变丢失引用
 		public Sprite nomalSprite;
 		[FormerlySerializedAs("Rank3Sprite")] public Sprite rank3Sprite;
 		[FormerlySerializedAs("Rank2Sprite")] public Sprite rank2Sprite;
 		[FormerlySerializedAs("Rank1Sprite")] public Sprite rank1Sprite;
-		//前三名奖牌    "FormerlySerializedAs"防止变量名改变丢失引用
+		//前三名的奖牌    "FormerlySerializedAs"防止变量名改变丢失引用
 		[FormerlySerializedAs("Rank3")] public Sprite rank3;
 		[FormerlySerializedAs("Rank2")] public Sprite rank2;
 		[FormerlySerializedAs("Rank1")] public Sprite rank1;
-		//显示段位图标   "FormerlySerializedAs"防止变量名改变丢失引用
+		//声明段位图标   "FormerlySerializedAs"防止变量名改变丢失引用
 		[FormerlySerializedAs("Stand1onRank")] public Sprite stand1ONRank;
 		[FormerlySerializedAs("Stand2onRank")] public Sprite stand2ONRank;
 		[FormerlySerializedAs("Stand3onRank")] public Sprite stand3ONRank;
@@ -70,7 +71,7 @@ namespace Assets.Scripts
 		public GameObject talk;
 		//对话框里显示自己名字
 		public Text myself;
-		//对话框里的奖杯数
+		//对话框里自己的奖杯数
 		public Text cupNum;
 
 		#region OSA implementation
@@ -126,10 +127,10 @@ namespace Assets.Scripts
 			if (model.RankStandText < 3)
 			{
 				//前三名显示特定奖牌，不显示数字
-				newOrRecycled.RankStandImage.GetComponent<Image>().sprite = model.RankStandImage;
+				newOrRecycled.RankStandImage.sprite = model.RankStandImage;
 				newOrRecycled.RankStandImage.gameObject.SetActive(true);
 				newOrRecycled.RankStandText.gameObject.SetActive(false);
-				newOrRecycled.RankStandImage.GetComponent<Image>().SetNativeSize();
+				newOrRecycled.RankStandImage.SetNativeSize();
 			}
 			else
 			{
@@ -336,22 +337,13 @@ namespace Assets.Scripts
 		public string title;
 		public Color color;
 		*/
-		//声明用到的ui组件类型
+		//声明匹配的ui组件内容类型
 		public Sprite BgButton;
 		public Sprite RankGrade;
-
-		public Sprite CupsBgImage;
-		public Sprite CupsImage;
-
 		public int CupNum;
 		public Sprite RankStandImage;
-
 		public int RankStandText;
-		public Sprite PlayerHeadImage;
-
 		public string PlayerName;
-		public string PlayerServer;
-
 		public int Count;
 		//public Sprite head;
 	}
@@ -365,21 +357,13 @@ namespace Assets.Scripts
 		public Text titleText;
 		public Image backgroundImage;
 		*/
-		//声明用到的ui组件
+		//声明用到的ui组件类型
 		public Image BgButton;
 		public Image RankGrade;
-
-		public Image CupsBgImage;
-		public Image CupsImage;
-
 		public Text CupNum;
 		public Image RankStandImage;
-
 		public Text RankStandText;
-		public Image PlayerHeadImage;
-
 		public Text PlayerName;
-		public Text PlayerServer;
 		//public Image head;
 		// GetComponentAtPath is a handy extension method from frame8.Logic.Misc.Other.Extensions
 			// which infers the variable's component from its type, so you won't need to specify it yourself
@@ -390,24 +374,15 @@ namespace Assets.Scripts
 
 			
 			// Retrieving the views from the item's root GameObject
-		public override void CollectViews()
+		public override void CollectViews()//收集并显示出声明的ui组件
 		{
 			base.CollectViews();
-			//显示出声明的ui组件
 			root.GetComponentAtPath("BgButton", out BgButton);
 			root.GetComponentAtPath("RankGrade", out RankGrade);
-
-			root.GetComponentAtPath("CupsBG", out CupsBgImage);
-			root.GetComponentAtPath("CupsImage", out CupsImage);
-
 			root.GetComponentAtPath("CupNum", out CupNum);
 			root.GetComponentAtPath("RankStandImage", out RankStandImage);
-
 			root.GetComponentAtPath("RankStandText", out RankStandText);
-			root.GetComponentAtPath("PlayerHeadImage", out PlayerHeadImage);
-
 			root.GetComponentAtPath("PlayerName", out PlayerName);
-			root.GetComponentAtPath("PlayerServer", out PlayerServer);
 			//root.GetComponentAtPath("head", out head);
 			// GetComponentAtPath is a handy extension method from frame8.Logic.Misc.Other.Extensions
 			// which infers the variable's component from its type, so you won't need to specify it yourself

@@ -6,13 +6,15 @@ using UnityEngine.UI;
 public class TimeController : JsonController
 {
     //防止重命名变量后丢失引用
-    [FormerlySerializedAs("text")] public Text endTimeText;
+    [FormerlySerializedAs("text")] 
+    public Text endTimeText;
     //倒计时总时间
     private int totalTime;
     //显示倒计时文本
-    private string printTime = "End Time : ";
+    private string printTime = "Ends  : ";
     private void Start()
     {
+        //获取json给的倒计时数据
         totalTime = countDown ;
         //开启协程
         StartCoroutine(Time());//这个开启方法只适用于协程只有一个参数的时候
@@ -26,7 +28,7 @@ public class TimeController : JsonController
         int s = Mathf.FloorToInt(time - m * 60 - h * 3600 - d * 24 * 60 * 60);
         return printTime + d.ToString() + "d " + h.ToString() + "h " + m.ToString() + "m " + s.ToString() + "s ";
     }
-    //检查倒计时
+    //每一帧检查倒计时是否结束
     private void Update()
     {
         if (totalTime == 0)
@@ -38,7 +40,7 @@ public class TimeController : JsonController
     {
         while (totalTime > 0)
         {
-            endTimeText.GetComponent<Text>().text = GetTime(totalTime);
+            endTimeText.text = GetTime(totalTime);
             //等待一秒后执行
             yield return new WaitForSeconds(1);
             totalTime--;

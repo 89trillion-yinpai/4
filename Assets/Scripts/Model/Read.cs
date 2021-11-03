@@ -4,6 +4,7 @@ using UnityEngine;
 using SimpleJSON;
 using System;
 
+//序列化数据，将数据状态转换为可传输的格式
 [Serializable]
 
 public class Read 
