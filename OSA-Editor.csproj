@@ -12,7 +12,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{661C13B0-1197-C934-7233-BE72173BEB98}</ProjectGuid>
+    <ProjectGuid>{BD7BB553-43D8-7D1D-5A91-B0DB6515340F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>OSA-Editor</AssemblyName>
@@ -58,26 +58,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Editor\CEditor.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Editor\MenuItems.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Editor\OSAWizard\BaseOSAWindow.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Editor\OSAWizard\CWiz.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Editor\OSAWizard\CreateOSAWindow.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Editor\OSAWizard\CustomAdapterConfigurators\CustomAdapterConfiguratorAttribute.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Editor\OSAWizard\CustomAdapterConfigurators\ICustomAdapterConfigurator.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Editor\OSAWizard\InitOSAWindow.cs" />
-     <None Include="Assets\Art\资源\OSA\Scripts\Editor\OSA.Editor.asmdef" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Editor\CEditor.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Editor\MenuItems.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Editor\OSAWizard\BaseOSAWindow.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Editor\OSAWizard\CWiz.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Editor\OSAWizard\CreateOSAWindow.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Editor\OSAWizard\CustomAdapterConfigurators\CustomAdapterConfiguratorAttribute.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Editor\OSAWizard\CustomAdapterConfigurators\ICustomAdapterConfigurator.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Editor\OSAWizard\InitOSAWindow.cs" />
+     <None Include="Assets\Plugins\OSA\Scripts\Editor\OSA.Editor.asmdef" />
  <Reference Include="UnityEditor.UI">
- <HintPath>/Users/yinpai/排行榜1/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>/Users/yinpai/Desktop/未命名文件夹/Http/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>/Users/yinpai/排行榜1/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>/Users/yinpai/Desktop/未命名文件夹/Http/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.TestRunner">
- <HintPath>/Users/yinpai/排行榜1/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+ <HintPath>/Users/yinpai/Desktop/未命名文件夹/Http/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.TestRunner">
- <HintPath>/Users/yinpai/排行榜1/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+ <HintPath>/Users/yinpai/Desktop/未命名文件夹/Http/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -272,7 +272,7 @@
  <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>/Users/yinpai/排行榜1/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
+ <HintPath>/Users/yinpai/Desktop/未命名文件夹/Http/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -637,7 +637,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="OSA.csproj">
-      <Project>{F9B9DE17-A7F9-837D-6BBC-6EE313AB5103}</Project>
+      <Project>{7B2A0E1D-9421-A616-9382-E5D0B8A35546}</Project>
       <Name>OSA</Name>
     </ProjectReference>
   </ItemGroup>

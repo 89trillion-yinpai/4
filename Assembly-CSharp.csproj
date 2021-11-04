@@ -12,7 +12,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{93B1E8F2-581E-65F0-9211-D48DA1AF8E45}</ProjectGuid>
+    <ProjectGuid>{351E9689-12D0-C787-5722-3436B51A6DD5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -58,43 +58,41 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Controller\CallBack.cs" />
      <Compile Include="Assets\Scripts\Controller\JsonController.cs" />
+     <Compile Include="Assets\Scripts\Controller\SendHttpRequest.cs" />
      <Compile Include="Assets\Scripts\Controller\TimeController.cs" />
      <Compile Include="Assets\Scripts\Model\Read.cs" />
      <Compile Include="Assets\Scripts\View\BasicListAdapter.cs" />
-     <None Include="Assets\Art\资源\OSA\Resources\OSA\Templates\ScriptsChunks\HeaderComment.txt" />
-     <None Include="Assets\Art\资源\OSA\Resources\OSA\Templates\Scripts\BasicListAdapter.txt" />
-     <None Include="Assets\Art\资源\OSA\Resources\OSA\Templates\Scripts\BasicGridAdapter.txt" />
-     <None Include="Assets\Art\资源\OSA\Docs\Manual link.txt" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>/Users/yinpai/排行榜1/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>/Users/yinpai/Desktop/未命名文件夹/Http/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>/Users/yinpai/排行榜1/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>/Users/yinpai/Desktop/未命名文件夹/Http/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>/Users/yinpai/排行榜1/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>/Users/yinpai/Desktop/未命名文件夹/Http/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>/Users/yinpai/排行榜1/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>/Users/yinpai/Desktop/未命名文件夹/Http/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>/Users/yinpai/排行榜1/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>/Users/yinpai/Desktop/未命名文件夹/Http/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>/Users/yinpai/排行榜1/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>/Users/yinpai/Desktop/未命名文件夹/Http/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>/Users/yinpai/排行榜1/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro">
- <HintPath>/Users/yinpai/排行榜1/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.UI">
- <HintPath>/Users/yinpai/排行榜1/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>/Users/yinpai/Desktop/未命名文件夹/Http/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>/Users/yinpai/排行榜1/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ <HintPath>/Users/yinpai/Desktop/未命名文件夹/Http/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TextMeshPro">
+ <HintPath>/Users/yinpai/Desktop/未命名文件夹/Http/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>/Users/yinpai/Desktop/未命名文件夹/Http/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -274,7 +272,7 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>/Users/yinpai/排行榜1/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
+ <HintPath>/Users/yinpai/Desktop/未命名文件夹/Http/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -630,15 +628,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{567ACC6C-5186-8152-E96E-C43066EBA5EA}</Project>
+      <Project>{9ACA3AB0-6DB5-7DC6-DBDC-ADEF55BF145E}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
     <ProjectReference Include="OSA-Editor.csproj">
-      <Project>{661C13B0-1197-C934-7233-BE72173BEB98}</Project>
+      <Project>{BD7BB553-43D8-7D1D-5A91-B0DB6515340F}</Project>
       <Name>OSA-Editor</Name>
     </ProjectReference>
     <ProjectReference Include="OSA.csproj">
-      <Project>{F9B9DE17-A7F9-837D-6BBC-6EE313AB5103}</Project>
+      <Project>{7B2A0E1D-9421-A616-9382-E5D0B8A35546}</Project>
       <Name>OSA</Name>
     </ProjectReference>
   </ItemGroup>

@@ -41,7 +41,7 @@ public class TimeController : JsonController
         while (totalTime > 0)
         {
             endTimeText.text = GetTime(totalTime);
-            //等待一秒后执行
+            //等待一秒后总时间减1，模拟时间流动
             yield return new WaitForSeconds(1);
             totalTime--;
         }

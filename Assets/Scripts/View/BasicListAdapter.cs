@@ -82,8 +82,6 @@ namespace Assets.Scripts
 
 			// Calling this initializes internal data and prepares the adapter to handle item count changes
 			base.Awake();
-			//读取json数据
-			list.duqu();
 			//复用次数等于json数据个数
 			RetrieveDataAndUpdate(list.item.Count);
 			// Retrieve the models from your data source and set the items count
@@ -140,7 +138,7 @@ namespace Assets.Scripts
 				newOrRecycled.RankStandText.text = (model.RankStandText + 1).ToString();
 			}
 			//每条排行榜添加点击事件
-			newOrRecycled.BgButton.GetComponent<Button>().onClick.AddListener(() =>
+			newOrRecycled.BgButton.onClick.AddListener(() =>
 			{
 				//显示对话框
 				talk.SetActive(true);
@@ -358,7 +356,7 @@ namespace Assets.Scripts
 		public Image backgroundImage;
 		*/
 		//声明用到的ui组件类型
-		public Image BgButton;
+		public Button BgButton;
 		public Image RankGrade;
 		public Text CupNum;
 		public Image RankStandImage;

@@ -12,7 +12,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F9B9DE17-A7F9-837D-6BBC-6EE313AB5103}</ProjectGuid>
+    <ProjectGuid>{7B2A0E1D-9421-A616-9382-E5D0B8A35546}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>OSA</AssemblyName>
@@ -58,82 +58,82 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Art\资源\OSA\Scripts\AdditionalComponents\OSAPercentageContentPaddingSetter.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Core\AbstractViewsHolder.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Core\BaseItemViewsHolder.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Core\BaseParams.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Core\Data\Gallery\GalleryAnimation.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Core\Data\Gallery\GalleryEffectParams.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Core\Data\Gallery\GalleryRotation.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Core\Data\Gallery\GalleryScale.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Core\IOSA.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Core\ItemCountChangeMode.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Core\ItemsDescriptor.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Core\LayoutInfo.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Core\OSA.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Core\OSAConst.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Core\OSADebugger.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Core\OSAException.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Core\OSAInternal.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Core\OSASubComponents.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Core\OSAUtil.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Core\Snapper8.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Core\SubComponents\AllowContentOutsideBoundsMode.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Core\SubComponents\ComputeVisibilityManager.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Core\SubComponents\ComputeVisibilityParams.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Core\SubComponents\ContentSizeOrPositionChangeParams.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Core\SubComponents\InternalState.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Core\SubComponents\NestingManager.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Core\SubComponents\ReleaseFromPullManager.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\CustomAdapters\GridView\CellGroupViewsHolder.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\CustomAdapters\GridView\CellViewsHolder.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\CustomAdapters\GridView\GridAdapter.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\CustomAdapters\GridView\GridParams.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\CustomParams\BaseParamsWithPrefab.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\CustomParams\BaseParamsWithPrefabAndData.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\CustomParams\BaseParamsWithPrefabAndLazyData.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\CustomParams\BaseParamsWithPrefabII.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\DataHelpers\AsyncBufferredDataSource.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\DataHelpers\BufferredDataSource.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\DataHelpers\LazyDataHelper.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\DataHelpers\LazyList.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\DataHelpers\SimpleDataHelper.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Util\DiscreteScrollbar.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Util\ExpandCollapseOnClick.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Util\IO\Pools\FIFOCachingPool.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Util\IO\Pools\IPool.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Util\IO\RemoteImageBehaviour.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Util\IO\SimpleImageDownloader.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Util\ItemDragging\DraggableItem.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Util\LongClickableItem.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Util\Optimization\ShadowRemover.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Util\PackedGridLayoutGroup.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Util\Packer2DBox.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Util\PullToRefresh\PullToRefreshBehaviour.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Util\PullToRefresh\PullToRefreshGizmo.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Util\PullToRefresh\PullToRefreshRotateGizmo.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Util\RectTransformEdgeDragger.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Util\ScrollViews\InputFieldInScrollRectFixer.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Util\ScrollViews\InputFieldInScrollRectFixerBase.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Util\ScrollViews\InputFieldInScrollRectFixerTMPro.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Util\ScrollViews\NonInteractableScrollRect.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Util\ScrollViews\UnityScrollRectProxy.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\Util\ScrollbarRotateOnPull.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\frame8\Common\IInitializable8.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\frame8\Common\Singleton8.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\frame8\Common\UIUtils8.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\frame8\DotNETCoreCompat.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\frame8\Extensions\RectTransformExtensions.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\frame8\Extensions\TransformExtensions.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\frame8\Extensions\VectorExtensions.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\frame8\IScrollRectProxy.cs" />
-     <Compile Include="Assets\Art\资源\OSA\Scripts\frame8\ScrollbarFixer8.cs" />
-     <None Include="Assets\Art\资源\OSA\Scripts\OSA.asmdef" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\AdditionalComponents\OSAPercentageContentPaddingSetter.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Core\AbstractViewsHolder.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Core\BaseItemViewsHolder.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Core\BaseParams.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Core\Data\Gallery\GalleryAnimation.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Core\Data\Gallery\GalleryEffectParams.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Core\Data\Gallery\GalleryRotation.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Core\Data\Gallery\GalleryScale.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Core\IOSA.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Core\ItemCountChangeMode.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Core\ItemsDescriptor.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Core\LayoutInfo.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Core\OSA.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Core\OSAConst.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Core\OSADebugger.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Core\OSAException.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Core\OSAInternal.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Core\OSASubComponents.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Core\OSAUtil.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Core\Snapper8.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Core\SubComponents\AllowContentOutsideBoundsMode.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Core\SubComponents\ComputeVisibilityManager.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Core\SubComponents\ComputeVisibilityParams.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Core\SubComponents\ContentSizeOrPositionChangeParams.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Core\SubComponents\InternalState.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Core\SubComponents\NestingManager.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Core\SubComponents\ReleaseFromPullManager.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\CustomAdapters\GridView\CellGroupViewsHolder.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\CustomAdapters\GridView\CellViewsHolder.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\CustomAdapters\GridView\GridAdapter.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\CustomAdapters\GridView\GridParams.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\CustomParams\BaseParamsWithPrefab.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\CustomParams\BaseParamsWithPrefabAndData.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\CustomParams\BaseParamsWithPrefabAndLazyData.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\CustomParams\BaseParamsWithPrefabII.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\DataHelpers\AsyncBufferredDataSource.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\DataHelpers\BufferredDataSource.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\DataHelpers\LazyDataHelper.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\DataHelpers\LazyList.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\DataHelpers\SimpleDataHelper.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Util\DiscreteScrollbar.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Util\ExpandCollapseOnClick.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Util\IO\Pools\FIFOCachingPool.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Util\IO\Pools\IPool.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Util\IO\RemoteImageBehaviour.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Util\IO\SimpleImageDownloader.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Util\ItemDragging\DraggableItem.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Util\LongClickableItem.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Util\Optimization\ShadowRemover.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Util\PackedGridLayoutGroup.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Util\Packer2DBox.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Util\PullToRefresh\PullToRefreshBehaviour.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Util\PullToRefresh\PullToRefreshGizmo.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Util\PullToRefresh\PullToRefreshRotateGizmo.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Util\RectTransformEdgeDragger.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Util\ScrollViews\InputFieldInScrollRectFixer.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Util\ScrollViews\InputFieldInScrollRectFixerBase.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Util\ScrollViews\InputFieldInScrollRectFixerTMPro.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Util\ScrollViews\NonInteractableScrollRect.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Util\ScrollViews\UnityScrollRectProxy.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\Util\ScrollbarRotateOnPull.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\frame8\Common\IInitializable8.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\frame8\Common\Singleton8.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\frame8\Common\UIUtils8.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\frame8\DotNETCoreCompat.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\frame8\Extensions\RectTransformExtensions.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\frame8\Extensions\TransformExtensions.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\frame8\Extensions\VectorExtensions.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\frame8\IScrollRectProxy.cs" />
+     <Compile Include="Assets\Plugins\OSA\Scripts\frame8\ScrollbarFixer8.cs" />
+     <None Include="Assets\Plugins\OSA\Scripts\OSA.asmdef" />
  <Reference Include="UnityEditor.UI">
- <HintPath>/Users/yinpai/排行榜1/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>/Users/yinpai/Desktop/未命名文件夹/Http/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>/Users/yinpai/排行榜1/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>/Users/yinpai/Desktop/未命名文件夹/Http/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -328,7 +328,7 @@
  <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>/Users/yinpai/排行榜1/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
+ <HintPath>/Users/yinpai/Desktop/未命名文件夹/Http/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
