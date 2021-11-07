@@ -6,18 +6,45 @@
 - 4:在排行榜基础上获取http数据，重新构建排行榜
 
 ## 目录结构
-- ├── Readme.md               #技术文档                    
-- ├── config                     
-- │   ├── SimpleScence        #场景
-- ├── internal
-- │   ├── JsonController    #读取配置文件
-- │   ├── Read          #数据类
-- │   ├── BasicListAdapter    #模版
-- │   |    ├── pkg   
--│   |    ├── ├── OSA   
-- │   |    ├── ├── SimepleJson
+```
+
+Assets
+├── Readme.md               #技术文档                    
+├── config                     
+│    ├─ Http
+│    ├─ OSA
+├─ Rank.unity
+├─ Resources
+│    ├─ ranklist.json
+├─ Scenes
+│    ├─ SampleScene.unity
+├─ Scripts
+│    ├─ Controller
+│    │    ├─ CallBack.cs #回调函数
+│    │    ├─ JsonController.cs #读取配置文件
+│    │    ├─ SendHttpRequest.cs #http请求
+│    │    ├─ TimeController.cs  #倒计时
+│    ├─ Model
+│    │    ├─ Read.cs #读取脚本
+│    ├─ View
+│    │    ├─ BasicListAdapter.cs #排行榜复用
 
 
+```
+##层级分析
+```
+├── MainCamera
+├── JsonController               #读取数据
+├── Canvans
+│   ├── OpenButton
+│   ├── CloseButton	
+│   ├── OSA                       #排行榜
+│       ├── Content		
+│           ├── content
+│           ├── BasicListAdapter  #复用模版
+
+
+```
 
 
 ## 代码
