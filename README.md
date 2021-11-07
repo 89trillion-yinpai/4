@@ -28,4 +28,5 @@
 | 修改倒计时的脚本 |  将倒计时固定为2048  |
 | 获取http数据更新排行榜的脚本 | 不再从json中读数据，用http获取的数据更新排行榜  |
 
-![Http](https://user-images.githubusercontent.com/92706401/140639018-65305890-62b7-42eb-8937-e081f93412ad.png)
+![Http](https://user-images.githubusercontent.com/92706401/140639070-e7e7f157-26c8-4ecf-bf70-a4f693b41e96.png)
+
