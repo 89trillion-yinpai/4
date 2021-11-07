@@ -6,6 +6,7 @@ public class CallBack : MonoBehaviour
 {
     //单例
     private static CallBack instance;
+
     public static CallBack Instance()
     {
         return instance;
@@ -31,6 +32,4 @@ public class CallBack : MonoBehaviour
         //读取在服务器获取的数据
         jiexi.ReadDatainServer(data);
     }
-
-
 }
