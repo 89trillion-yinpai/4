@@ -1,30 +1,59 @@
-# 排行榜技术文档
-## 整体框架：
-- 1:先通过提供的json文件读取数据并创建对象，在创建排行榜的时候解析这些数据成为他们的属性。
-- 2:通过json给的数据判断需要创建的预置物。
-- 3:导入美术资源
-- 4:根据需求文档确定整个UI的层级和结构。
-- 5:根据需求文档实现具体的功能并测试
+# Http技术文档
+## 整体框架
+- 1:编写http请求响应脚本获取数据
+- 2:编写成功回调函数
+- 3:导入http插件
+- 4:在排行榜基础上获取http数据，重新构建排行榜
 
-## 目录结构：
-- —Assets—
-- ——Art——
-- ———资源———  #存储美术资源
-- ————OSA——— #存储OSA插件
-- —Plugins— #存储simplejson插件
-- —Resources—
-- —Script—  #存储编写的脚本
-- ——Controller——  #控制类脚本
-- ——Model————  #数据类脚本
-- ——View——  #搭建ui脚本
+## 目录结构
+```
+
+Assets
+├── Readme.md               #技术文档                    
+├── config                     
+│    ├─ Http
+│    ├─ OSA
+├─ Rank.unity
+├─ Resources
+│    ├─ ranklist.json
+├─ Scenes
+│    ├─ SampleScene.unity
+├─ Scripts
+│    ├─ Controller
+│    │    ├─ CallBack.cs #回调函数
+│    │    ├─ JsonController.cs #读取配置文件
+│    │    ├─ SendHttpRequest.cs #http请求
+│    │    ├─ TimeController.cs  #倒计时
+│    ├─ Model
+│    │    ├─ Read.cs #读取脚本
+│    ├─ View
+│    │    ├─ BasicListAdapter.cs #排行榜复用
 
 
-## 层级分析：
-- 入口按钮（button）打开整个排行榜，分为上面的倒计时界面和下面的排行滚动视图（OSAviewport),在滚动视图里显示排行榜的所有内容
+```
+##层级分析
+```
+├── MainCamera
+├── JsonController               #读取数据
+├── Canvans
+│   ├── OpenButton
+│   ├── CloseButton	
+│   ├── OSA                       #排行榜
+│       ├── Content		
+│           ├── content
+│           ├── BasicListAdapter  #复用模版
 
-# 代码：
-- 1:读取和解析json的脚本
-- 2:控制倒计时的脚本（每秒更新一次）
-- 3:控制排行榜内容更新和复用的脚本
-- 
-- ![排行榜](https://user-images.githubusercontent.com/92706401/140011666-d76ccdd7-c2b0-47b9-8966-cdfd442c376b.png)
+
+```
+
+
+## 代码
+| 需要的脚本       |     实现的功能 |
+| ------ | ------                |
+| http请求响应脚本 |  实现http请求响应   |
+| 成功回调的脚本   |  实现回调的功能    |
+| 修改倒计时的脚本 |  将倒计时固定为2048  |
+| 获取http数据更新排行榜的脚本 | 不再从json中读数据，用http获取的数据更新排行榜  |
+
+![Http](https://user-images.githubusercontent.com/92706401/140639070-e7e7f157-26c8-4ecf-bf70-a4f693b41e96.png)
+
